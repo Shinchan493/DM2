@@ -1,0 +1,217 @@
+{
+    "Data_Statistics": {
+        "Imbalanced_Train_Size": 45664,
+        "Imbalanced_Train_Majority_0": 41632,
+        "Imbalanced_Train_Minority_1": 4032,
+        "Balanced_Train_Size": 16128,
+        "Balanced_Train_Majority_0": 12096,
+        "Balanced_Train_Minority_1": 4032,
+        "Test_Size": 10641,
+        "Test_Majority_0": 9689,
+        "Test_Minority_1": 952
+    },
+    "Baseline_Imbalanced": {
+        "RandomForest (Ensemble)": {
+            "best_params": {
+                "max_depth": 20,
+                "n_estimators": 100
+            },
+            "metrics": {
+                "TP": 815,
+                "TN": 9604,
+                "FP": 85,
+                "FN": 137,
+                "F1 Score": 0.8801295896328293,
+                "Balanced Accuracy": 0.9236598009004406,
+                "Confusion Matrix": [
+                    [
+                        9604,
+                        85
+                    ],
+                    [
+                        137,
+                        815
+                    ]
+                ]
+            }
+        },
+        "SVM (Shallow)": {
+            "best_params": {
+                "C": 10,
+                "kernel": "rbf"
+            },
+            "metrics": {
+                "TP": 628,
+                "TN": 9615,
+                "FP": 74,
+                "FN": 324,
+                "F1 Score": 0.7593712212817412,
+                "Balanced Accuracy": 0.8260131692268196,
+                "Confusion Matrix": [
+                    [
+                        9615,
+                        74
+                    ],
+                    [
+                        324,
+                        628
+                    ]
+                ]
+            }
+        },
+        "XGBoost (Ensemble)": {
+            "best_params": {
+                "learning_rate": 0.1,
+                "max_depth": 7,
+                "n_estimators": 100
+            },
+            "metrics": {
+                "TP": 810,
+                "TN": 9587,
+                "FP": 102,
+                "FN": 142,
+                "F1 Score": 0.869098712446352,
+                "Balanced Accuracy": 0.9201564669628817,
+                "Confusion Matrix": [
+                    [
+                        9587,
+                        102
+                    ],
+                    [
+                        142,
+                        810
+                    ]
+                ]
+            }
+        },
+        "MLP (Deep)": {
+            "best_params": {
+                "alpha": 0.0001,
+                "hidden_layer_sizes": [
+                    100
+                ],
+                "learning_rate_init": 0.001
+            },
+            "metrics": {
+                "TP": 709,
+                "TN": 9592,
+                "FP": 97,
+                "FN": 243,
+                "F1 Score": 0.8065984072810012,
+                "Balanced Accuracy": 0.8673682730394253,
+                "Confusion Matrix": [
+                    [
+                        9592,
+                        97
+                    ],
+                    [
+                        243,
+                        709
+                    ]
+                ]
+            }
+        }
+    },
+    "Transition_Balanced": {
+        "RandomForest (Ensemble)": {
+            "best_params": {
+                "max_depth": null,
+                "n_estimators": 100
+            },
+            "metrics": {
+                "TP": 831,
+                "TN": 9502,
+                "FP": 187,
+                "FN": 121,
+                "F1 Score": 0.8436548223350254,
+                "Balanced Accuracy": 0.9267994611406334,
+                "Confusion Matrix": [
+                    [
+                        9502,
+                        187
+                    ],
+                    [
+                        121,
+                        831
+                    ]
+                ]
+            }
+        },
+        "SVM (Shallow)": {
+            "best_params": {
+                "C": 10,
+                "kernel": "rbf"
+            },
+            "metrics": {
+                "TP": 658,
+                "TN": 9528,
+                "FP": 161,
+                "FN": 294,
+                "F1 Score": 0.7430830039525692,
+                "Balanced Accuracy": 0.8372798443352983,
+                "Confusion Matrix": [
+                    [
+                        9528,
+                        161
+                    ],
+                    [
+                        294,
+                        658
+                    ]
+                ]
+            }
+        },
+        "XGBoost (Ensemble)": {
+            "best_params": {
+                "learning_rate": 0.1,
+                "max_depth": 7,
+                "n_estimators": 100
+            },
+            "metrics": {
+                "TP": 836,
+                "TN": 9530,
+                "FP": 159,
+                "FN": 116,
+                "F1 Score": 0.8587570621468926,
+                "Balanced Accuracy": 0.930870449118857,
+                "Confusion Matrix": [
+                    [
+                        9530,
+                        159
+                    ],
+                    [
+                        116,
+                        836
+                    ]
+                ]
+            }
+        },
+        "MLP (Deep)": {
+            "best_params": {
+                "alpha": 0.0001,
+                "hidden_layer_sizes": [
+                    50
+                ],
+                "learning_rate_init": 0.001
+            },
+            "metrics": {
+                "TP": 781,
+                "TN": 9381,
+                "FP": 308,
+                "FN": 171,
+                "F1 Score": 0.76531112199902,
+                "Balanced Accuracy": 0.8942947624916413,
+                "Confusion Matrix": [
+                    [
+                        9381,
+                        308
+                    ],
+                    [
+                        171,
+                        781
+                    ]
+                ]
+            }
+        }
+    }
+}
